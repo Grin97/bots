@@ -109,7 +109,7 @@ def generate_excel(data_rows):
     wb.remove(default_sheet)
     
     sheets = {}
-    target_size = (150, 150)
+    target_size = (200, 200)
     
     for date_str, bti_room, text, category, img_path in data_rows:
         sheet_name = category if category else "Разное"
