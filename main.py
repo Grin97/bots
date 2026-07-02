@@ -231,7 +231,7 @@ async def process_category_click(callback: CallbackQuery, state: FSMContext):
     await state.update_data(current_msg_id=msg_id)
     await state.set_state(BotStates.waiting_for_bti)
     await callback.message.edit_text(
-        f"Раздел «{cat_name.replace('_', ' ')}» выбран.\n"
+        f"Раздел «{cat_name.replace('_', ' ')}» выбран.\n\n"
         "Отправьте номер помещения по БТИ или `-`"
     )
     await callback.answer()
